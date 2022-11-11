@@ -91,7 +91,7 @@ nav ul li a:hover {
     position: fixed;
     top: 15%;
     left: 5%;
-    z-index: 99;
+    z-index: 9;
     display: none;
 }
 .hidden-menu-box ul {
@@ -325,5 +325,22 @@ main h1 {
 @media (min-width: 790px) {
     .hidden-menu-box {
         display: none;
+    }
+}
+@media (max-width: 490px) {
+    main {
+        padding-top: 2em;
+    }
+    main h1 {
+        font-size: 3em;
+    }
+    .plus-number {
+        font-size: 1.2em;
+    }
+    .plus-name {
+        font-size: 0.7em;
+    }
+    .best-fitness-club-box {
+        transform: scale(0.8);
     }
 }
