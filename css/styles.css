@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --orange: #F48915;
+    --orange-flame: #FA5341;
+    --soft-gray: #d9d9d9;
+    --light-gray: #656565;
+    --gray: #464D53;
+    --dark-gray: #393C41;
+    --blur-orange: rgba(253,120,43,.69);
+    --blur-red: red;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #464D53;
+}
+.header-section-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+/* Orange Blur Circle */
+.orange-blur-circle {
+    width: 25em;
+    height: 30em;
+    background-color: rgba(253,120,43,.69);
+    filter: blur(150px);
+    position: absolute;
+    left: 0;
+    z-index: -9;
+    border-radius: 50%;
+}
+
+.left-side {
+    width: 76%;
+}
+.right-side {
+    width: 24%;
+    background-color: var(--orange);
+    height: 98vh;
+}
+
+/* Header */
+
+header {
+    padding: 1.8em;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-box {
+    width: 11em;
+}
+.logo-box img {
+    width: 100%;
+}
+nav {
+    display: flex;
+}
+nav ul {
+    display: flex;
+    align-self: center;
+}
+nav ul li {
+    list-style-type: none;
+    padding-left: 2em;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover {
+    color: var(--orange);
+}
+
+/* Header Hidden Menu (Responsive...) */
+
+.hidden-menu-box {
+    background-color: var(--dark-gray);
+    opacity: 0.9;
+    width: 90%;
+    border: 1px solid var(--orange);
+    box-shadow: 1px 1px 20px #af783e;
+    position: fixed;
+    top: 15%;
+    left: 5%;
+    z-index: 99;
+    display: none;
+}
+.hidden-menu-box ul {
+    margin: 1em 0;
+}
+.hidden-menu-box ul li {
+    list-style-type: none;
+    padding: 1em;
+}
+.hidden-menu-box ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5em;
+}
+.hidden-menu-box ul li a:hover {
+    color: var(--orange);
+}
+.display {
+    display: block;
+}
+
+/* Hamburger Menu */
+
+.hamburger-menu {
+    display: flex;
+    justify-content: center;
+    border: 1px solid lightgray;
+    padding: 0.6em;
+    width: 3em;
+    height: 3em;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    top: 1.5em;
+    right: 1.5em;
+}
+.hamburger-menu img {
+    width: 100%;
+    height: 100%;
+    align-self: center;
+}
+
+/* Main Section */
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding-left: 1.8em;
+    padding-right: 1.8em;
+    padding-top: 3em;
+}
+.best-fitness-club-box {
+    background-color: var(--dark-gray);
+    width: 21em;
+    padding: 2em 0.5em;
+    border-radius: 10em;
+    text-align: center;
+    position: relative;
+}
+.best-fitness-club-box span {
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    left: 1em;
+    top: 1.4em;
+    z-index: 1;
+}
+.orange-move-box {
+    width: 5em;
+    height: 3em;
+    background-color: var(--orange);
+    border-radius: 10em;
+    position: absolute;
+    top: 0.4em;
+    right: 0.5em;
+}
+main h1 {
+    color: white;
+    font-size: 4.5em;
+    line-height: 1.5em;
+}
+.contorn {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    color: transparent;
+    font-family: Arial,Helvetica,sans-serif;
+}
+.shape-description {
+    color: white;
+    letter-spacing: 1px;
+}
+
+/* Plus Data Box */
+
+.plus-data-box {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5em;
+}
+.plus-number {
+    font-size: 2em;
+    color: white;
+}
+.plus-name {
+    color: #9c9c9c;
+    text-transform: uppercase;
+}
+#expert-coaches-span {
+    color: white;
+}
+
+/* Main Buttons */
+
+.main-buttons-box {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 2.3em;
+}
+.get-started-button {
+    text-transform: capitalize;
+    padding: 0.6em 1.7em;
+    font-weight: bold;
+    background-color: var(--orange);
+    color: white;
+    border: 2px solid var(--orange);
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+.learn-more-button {
+    text-transform: capitalize;
+    padding: 0.6em 1.7em;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid var(--orange);
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+/* ---------- Right Side (Initial Orange Box) */
+
+.right-side {
+    padding-top: 2.5em;
+    padding-right: 2.5em;
+    position: relative;
+}
+/* Join Button */
+.join-button-box {
+    text-align: right;
+}
+.join-button-box a {
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    background-color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 1em;
+}
+/* Heart Rate Box */
+.heart-rate-box {
+    background-color: var(--gray);
+    width: fit-content;
+    padding: 1em;
+    border-radius: 0.3em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1em;
+    margin-top: 3em;
+    margin-left: 45%;
+}
+.heart-rate-box img {
+    width: 2em;
+}
+.heart-rate-name {
+    color: #9c9c9c;
+}
+.heart-rate-number {
+    color: white;
+    font-size: 1.5em;
+}
+
+
+
+
+
+/* Responsive Media Queries */
+
+@media (max-width: 1125px) {
+    .heart-rate-box {
+        margin-left: 30%;
+    }
+}
+@media (max-width: 980px) {
+    .header-section-container {
+        flex-wrap: wrap;
+    }
+    .left-side {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 0.5em;
+    }
+    .right-side {
+        width: 100%;
+        height: auto;
+    }
+    .plus-data-box {
+        margin: auto;
+    }
+    .best-fitness-club-box {
+        margin: auto;
+    }
+    .main-buttons-box {
+        justify-content: center;
+    }
+}
+@media (max-width: 790px) {
+    nav {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+}
+@media (min-width: 790px) {
+    .hidden-menu-box {
+        display: none;
+    }
+}
