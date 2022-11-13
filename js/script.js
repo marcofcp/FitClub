@@ -63,6 +63,6 @@ $(document).load(
     /* Orange Little box move */
     $('.orange-move-box').animate(
         {left: '0.5em'}, 2000),
-    /*  */
+    /* Main section counters */
     cron1(), cron2(), cron3()
 );
