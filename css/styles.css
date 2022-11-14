@@ -84,7 +84,7 @@ nav ul li a:hover {
 .hidden-menu-box {
     background-color: var(--dark-gray);
     opacity: 0.9;
-    width: 90%;
+    width: 85%;
     border: 1px solid var(--orange);
     box-shadow: 1px 1px 20px #af783e;
     position: fixed;
@@ -321,6 +321,7 @@ main h1 {
 .programs-container {
     width: 100%;
     padding: 5em 0;
+    color: white;
 }
 .programs-container h2 {
     color: white;
@@ -336,6 +337,151 @@ main h1 {
 .programs-span {
     padding: 0 1.5em;
 }
+.programs-item-container {
+    padding: 2.5em 1.8em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.programs-item {
+    background-color: #7b7b7b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5em;
+    width: 22em;
+    padding: 1.5em;
+    cursor: pointer;
+}
+.programs-item img {
+    width: 3em;
+}
+.programs-item-name {
+    font-weight: bold;
+}
+.programs-item-description {
+    font-size: 0.9em;
+    line-height: 1.70em;
+}
+.programs-join-arrow {
+    display: flex;
+    justify-content: left;
+}
+.programs-join-arrow img {
+    width: 1em;
+    align-self: center;
+    margin-left: 2em;
+}
+.programs-item:hover {
+    background: linear-gradient(45deg, #F48915, #FA5341);
+}
+
+/* Why Us Section */
+
+.why-us-container {
+    padding-bottom: 5em;
+    display: flex;
+    width: 100%;
+}
+.whyus-left-side {
+    width: 60%;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.whyus-right-side {
+    width: 40%;
+}
+.whyus-left-side {
+    padding-left: 1.8em;
+    padding-right: 1.8em;
+    display: flex;
+    gap: 1em;
+}
+.gym1pic {
+    width: 12em;
+    height: 31em;
+    margin-right: 2em;
+}
+.gym2pic {
+    width: 25em;
+    height: 17em;
+}
+.right-pictures {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.two-pictures {
+    width: 25em;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+.gym3pic {
+    width: 14em;
+    height: 13em;
+}
+.gym4pic {
+    width: 10em;
+    height: 13em;
+}
+
+/* ------------ Why choose us (right side) */
+
+.whyus-right-side {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding-left: 2em;
+}
+.right-side-box {
+    margin: auto;
+}
+.some-reasons {
+    text-transform: uppercase;
+    color: var(--orange);
+    font-weight: bold;
+}
+.why-choose-us {
+    font-size: 3em;
+    text-transform: uppercase;
+}
+.why-choose-us span {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    color: transparent;
+    font-family: Arial,Helvetica,sans-serif;
+}
+.why-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.why-list-item {
+    display: flex;
+}
+.why-list-item img {
+    width: 2em;
+}
+.why-list-item p {
+    align-self: center;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 1em;
+}
+.why-partners p {
+    color: #9c9c9c;
+    text-transform: uppercase;
+    font-size: 1em;
+    margin-bottom: 0.8em;
+}
+.why-partners-img-box img {
+    width: 2.5em;
+    margin-right: 1em;
+}
 
 
 
@@ -345,6 +491,21 @@ main h1 {
 @media (max-width: 1190px) {
     .programs-container h2 {
         font-size: 2.5em;
+    }
+    .why-us-container {
+        flex-wrap: wrap;
+    }
+    .whyus-left-side {
+        width: 100%;
+        padding: 0;
+    }
+    .why-left-box {
+        margin: auto;
+    }
+    .whyus-right-side {
+        width: 100%;
+        margin-top: 2em;
+        margin: auto;
     }
 }
 @media (max-width: 1125px) {
@@ -427,6 +588,17 @@ main h1 {
 @media (min-width: 790px) {
     .hidden-menu-box {
         display: none;
+    }
+}
+@media (max-width: 710px) {
+    .why-left-box {
+        width: 100%;
+        margin: 0;
+        margin: auto;
+    }
+    .whyus-left-side {
+        margin: 0;
+        margin: auto;
     }
 }
 @media (max-width: 600px) {

@@ -10,13 +10,13 @@ hamburgerMenu.addEventListener("click", ()=> {
     hiddenMenu.classList.toggle("display");
 });
 
-// Window Scroll = True, hide de menu (responsive)
+// Window Scroll = True, hide menu (responsive)
 
 window.onscroll = ()=> {
     if(hiddenMenu.classList.contains("display")) {
         hiddenMenu.classList.remove("display");
     }
-}
+};
 
 // Animate effects
 
