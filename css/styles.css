@@ -320,7 +320,7 @@ main h1 {
 
 .programs-container {
     width: 100%;
-    padding: 5em 0;
+    padding: 3em 0;
     color: white;
 }
 .programs-container h2 {
@@ -385,23 +385,19 @@ main h1 {
     width: 100%;
 }
 .whyus-left-side {
+    justify-content: center;
     width: 60%;
-    margin-left: 1em;
-    margin-right: 1em;
+    padding-left: 1.8em;
+    padding-right: 1.8em;
+    display: flex;
 }
 .whyus-right-side {
     width: 40%;
 }
-.whyus-left-side {
-    padding-left: 1.8em;
-    padding-right: 1.8em;
-    display: flex;
-    gap: 1em;
-}
 .gym1pic {
     width: 12em;
     height: 31em;
-    margin-right: 2em;
+    margin-right: 1em;
 }
 .gym2pic {
     width: 25em;
@@ -434,7 +430,7 @@ main h1 {
     display: flex;
     flex-direction: column;
     gap: 2em;
-    padding-left: 2em;
+    padding-left: 0.7em;
 }
 .right-side-box {
     margin: auto;
@@ -497,15 +493,17 @@ main h1 {
     }
     .whyus-left-side {
         width: 100%;
-        padding: 0;
-    }
-    .why-left-box {
         margin: auto;
     }
     .whyus-right-side {
         width: 100%;
         margin-top: 2em;
-        margin: auto;
+    }
+    .gym2pic {
+        margin-right: 0;
+    }
+    .programs-container {
+        padding-bottom: 2em;
     }
 }
 @media (max-width: 1125px) {
@@ -565,6 +563,11 @@ main h1 {
     .programs-container h2 {
         font-size: 2em;
     }
+    .whyus-right-side {
+        width: 100%;
+        margin: auto;
+        padding-top: 2em;
+    }
 }
 @media (max-width: 790px) {
     nav {
@@ -591,14 +594,22 @@ main h1 {
     }
 }
 @media (max-width: 710px) {
-    .why-left-box {
-        width: 100%;
-        margin: 0;
-        margin: auto;
-    }
     .whyus-left-side {
         margin: 0;
-        margin: auto;
+    }
+}
+@media (max-width: 655px) {
+    .whyus-left-side {
+        padding: 0;
+        transform: scale(0.7);
+        margin-top: -5em;
+    }
+    .programs-container {
+        padding-bottom: 0;
+    }
+    .whyus-right-side {
+        padding-top: 0;
+        margin-top: -3em;
     }
 }
 @media (max-width: 600px) {
@@ -650,6 +661,11 @@ main h1 {
     .heart-rate-box {
         transform: scale(0.6);
         margin-top: 40%;
+    }
+}
+@media (max-width: 460px) {
+    .whyus-left-side {
+        transform: scale(0.5);
     }
 }
 @media (width: 380px) {
