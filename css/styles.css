@@ -479,6 +479,114 @@ main h1 {
     margin-right: 1em;
 }
 
+/* Section Journey */
+
+.journey-section {
+    width: 100%;
+}
+.journey-section h2 {
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    padding: 0 1em;
+}
+.ready-contorn-span, .with-us-span {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    color: transparent;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+/* ----------------- Card Item */
+
+.three-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3em;
+    margin: 4em 0;
+}
+.card-item {
+    background-color: var(--light-gray);
+    color: white;
+    padding: 1.5em;
+    width: 18em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8em;
+}
+#card-item-middle {
+    background: linear-gradient(45deg, #F48915, #FA5341);
+    transform: scale(1.1);
+}
+.card-image-box img {
+    width: 2em;
+}
+.plane-name {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.plan-number {
+    font-size: 3em;
+    font-weight: bold;
+}
+.plan-tasks-box {
+    display: flex;
+}
+.tasks-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.task-description {
+    align-self: center;
+}
+.img-task-box {
+    width: 1em;
+    height: 1em;
+    align-self: center;
+    margin-right: 1em;
+}
+.img-task-box img {
+    width: 100%;
+}
+.more-benefits img {
+    width: 1em;
+}
+.benefits-box {
+    display: flex;
+}
+.more-benefits {
+    font-size: 0.8em;
+    align-self: center;
+    margin-right: 1em;
+}
+.card-right-arrow {
+    width: 0.7em;
+}
+.card-right-arrow img {
+    width: 100%;
+}
+.join-now-tasks {
+    background-color: white;
+    color: black;
+    width: 100%;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.8em 0;
+}
+#join-now-tasks-middle {
+    color: var(--orange);
+}
+
+
+
+
+
 
 
 
@@ -604,6 +712,11 @@ main h1 {
         margin: 0;
     }
 }
+@media (max-width: 670px) {
+    .journey-section h2 {
+        font-size: 2em;
+    }
+}
 @media (max-width: 655px) {
     .whyus-left-side {
         padding: 0;
@@ -685,6 +798,9 @@ main h1 {
     }
     .right-side-box {
         transform: scale(0.8);
+    }
+    .journey-section h2 {
+        font-size: 1.6em;
     }
 }
 @media (width: 380px) {
