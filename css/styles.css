@@ -117,7 +117,8 @@ nav ul li a:hover {
 .hamburger-menu {
     display: flex;
     justify-content: center;
-    border: 1px solid lightgray;
+    border: 1px solid var(--orange);
+    box-shadow: 2px 2px 5px var(--orange);
     padding: 0.6em;
     width: 3em;
     height: 3em;
@@ -427,13 +428,12 @@ main h1 {
 
 .whyus-right-side {
     color: white;
+}
+.right-side-box {
     display: flex;
     flex-direction: column;
     gap: 2em;
     padding-left: 0.7em;
-}
-.right-side-box {
-    margin: auto;
 }
 .some-reasons {
     text-transform: uppercase;
@@ -499,6 +499,10 @@ main h1 {
         width: 100%;
         margin-top: 2em;
     }
+    .right-side-box {
+        width: 40%;
+        margin: auto;
+    }
     .gym2pic {
         margin-right: 0;
     }
@@ -509,6 +513,10 @@ main h1 {
 @media (max-width: 1125px) {
     .heart-rate-box {
         margin-left: 30%;
+    }
+    .right-side-box {
+        width: 28em;
+        padding-left: 0;
     }
 }
 @media (max-width: 980px) {
@@ -522,15 +530,13 @@ main h1 {
     }
     .right-side {
         background-color: #464D53;
+        width: 100%;
+        height: 27em;
+        padding: 2em 0;
     }
     main {
         width: 80%;
         margin: auto;
-    }
-    .right-side {
-        width: 100%;
-        height: 27em;
-        padding: 2em 0;
     }
     .plus-data-box {
         margin: auto;
@@ -662,10 +668,23 @@ main h1 {
         transform: scale(0.6);
         margin-top: 40%;
     }
+    .why-choose-us {
+        font-size: 2.5em;
+    }
 }
 @media (max-width: 460px) {
+    .why-us-container {
+        padding-bottom: 2em;
+    }
     .whyus-left-side {
-        transform: scale(0.5);
+        transform: scale(0.4);
+    }
+    .whyus-right-side {
+        justify-content: left;
+        margin-top: -10em;
+    }
+    .right-side-box {
+        transform: scale(0.8);
     }
 }
 @media (width: 380px) {
