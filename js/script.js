@@ -1,3 +1,16 @@
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+
+    loop: true,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+});
+
 const expertCoachesSpan = document.querySelector('.expert-coaches-span');
 const membersJoinedSpan = document.querySelector('.members-joined-span');
 const fitnessProgramsSpan = document.querySelector('.fitness-programs-span');
