@@ -691,6 +691,7 @@ main h1 {
 }
 .testimonial-image-box img {
     width: 100%;
+    height: 100%;
 }
 .border-orange-box {
     background: none;
@@ -707,7 +708,7 @@ main h1 {
     width: 17em;
     height: 20em;
     position: absolute;
-    top: 13%;
+    top: 8%;
     right: 18%;
     z-index: -9;
 }
@@ -985,20 +986,27 @@ main h1 {
     main {
         width: 100%;
     }
-    .main-carousel-container {
-        transform: scale(0.9);
+    .carousel-right {
+        display: block;
+        width: 100%;
+        position: none;
     }
     .testimonial-image-box {
+        position: unset;
+        margin: auto;
+        margin-top: 5em;
         top: 6%;
         right: 20%;
     }
     .border-orange-box {
+        display: none;
         top: 5%;
         right: 23%;
     }
     .testimonial-orange-gradient {
         top: 9%;
         right: 17%;
+        display: none;
     }
 }
 @media (max-width: 514px) {
@@ -1007,11 +1015,6 @@ main h1 {
     }
     .join-button-box {
         margin-right: 4%;
-    }
-}
-@media (max-width: 500px) {
-    .carousel-right {
-        transform: scale(0.9);
     }
 }
 @media (max-width: 490px) {
@@ -1055,8 +1058,22 @@ main h1 {
     .journey-section h2 {
         font-size: 1.6em;
     }
-    .carousel-right {
-        transform: scale(0.8);
+    .carousel-left {
+        width: 100%;
+        gap: 1.5em;
+    }
+    .carousel-title {
+        margin: 0;
+    }
+    .testimonial-description {
+        line-height: 2em;
+    }
+}
+@media (max-width: 424px) {
+    .testimonial-image-box {
+        padding-top: 2em;
+        width: 13em;
+        height: 18em;
     }
 }
 @media (width: 380px) {
