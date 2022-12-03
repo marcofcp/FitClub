@@ -734,6 +734,7 @@ main h1 {
     padding: 0 3em;
     padding-top: 2em;
     display: flex;
+    margin-bottom: 5em;
 }
 .levelup-left {
     width: 40%;
@@ -789,6 +790,55 @@ main h1 {
     padding: 0.7em 1em;
     font-weight: bold;
     font-size: 0.8em;
+}
+
+/* Footer */
+
+footer {
+    border-top: 2px solid var(--soft-gray);
+    position: relative;
+}
+.socials-box {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    margin: 5em 0;
+}
+.social-box {
+    width: 2em;
+}
+.social-box img {
+    width: 100%;
+}
+.footer-logo-box {
+    width: 11em;
+    margin: auto;
+    margin-bottom: 3em;
+}
+.footer-logo-box img {
+    width: 100%;
+}
+.orange-blur-circle-footer-left {
+    width: 15em;
+    height: 20em;
+    background-color: rgba(253,120,43,.69);
+    filter: blur(150px);
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: -9;
+    border-radius: 50%;
+}
+.orange-blur-circle-footer-right {
+    width: 15em;
+    height: 20em;
+    background-color: rgb(252, 65, 65);
+    filter: blur(150px);
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    z-index: -9;
+    border-radius: 50%;
 }
 
 
